@@ -1,0 +1,36 @@
+#{extends 'main.html' /}
+#{set title:'Sign up' /}
+
+<nav class="ui menu">
+  <a class="ui item" href="/welcome">Home</a>
+  <a class="ui active item" href="/signup">Register</a>
+  <a class="ui item" href="/signin">Login</a>
+</nav>
+
+<section class="ui two column grid segment">
+  <div class="ui four wide column">
+	  <form class="ui form" action="/register" method="POST">
+	    <div class="ui checkbox">
+	      <input type="checkbox" id="citizenStatus" name="user.citizenStatus">
+	      <label for="citizenStatus">Confirm you are a US citizen</label><br>
+	    </div>
+	    <div class="field">
+	      <label>First Name:</label><br>
+	      <input placeholder="First Name" type="text" name="user.firstName">
+	    </div>
+	    <div class="field">
+	      <label>Last Name:</label><br>
+	      <input placeholder="Last Name" type="text" name="user.lastName">
+	    </div>
+	    <div class="field">
+	      <label>Email Address:</label><br>
+	      <input placeholder="Email" type="text" name="user.email">
+	    </div>
+	    <div class="field">
+	      <label>Password:</label><br>
+	      <input placeholder="Password" type="password" name="user.password">
+	    </div>
+	    <br><button class="ui blue submit button">Sign Up</button>
+	  </form>
+	</div>
+</section>

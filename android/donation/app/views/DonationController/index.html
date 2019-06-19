@@ -1,0 +1,61 @@
+#{extends 'main.html' /}
+#{set title:'Make a donation' /}
+
+<nav class="ui menu">
+  <a class="ui item" href="/landing">Home</a>
+  <a class="ui active item" href="">Donate</a>
+  <a class="ui item" href="/report">Report</a>  
+  <a class="ui item" href="/logout">Logout</a>  
+</nav>
+
+<section class="ui two column grid segment">
+  <div class="six wide column">
+    <h2>Welcome Homer!</h2>
+    <h3>Please give generously</h3>
+    
+    <form class="ui form" action="/donation/donate" method="POST">
+      <div class="ui grid">
+        <div class="four wide column">
+        
+          <div class="ui selection dropdown">
+            <input name="donation.amount" type="hidden">
+            <div class="default text">Amount </div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item" data-value="100">$100</div>
+              <div class="item" data-value="250">$250</div>
+              <div class="item" data-value="500">$500</div>
+            </div>
+          </div>
+          <script src="@{'/public/javascripts/donate.js'}"></script>
+          
+          <div class="grouped inline fields">          
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input id="paypal" name="donation.method" value="paypal" type="radio">
+                <label for="paypal">Paypal</label>
+              </div>
+              <div class="ui radio checkbox">
+                <input id="direct" name="donation.method" value="direct" type="radio">
+                <label for="direct">Direct</label>
+              </div>
+            </div>            
+          </div>
+          
+        </div>
+      </div>
+      <button class="ui blue submit button"><i class="money icon"></i> Donate</button>
+      <div class="ui error message"></div>
+    </form>
+    
+    <h3>Amount Donated So Far:</h3>  
+    <div class="ui successful progress" data-percent=${percentDonated} id="progressBar">
+      <div class="left aligned label">${percentDonated}% Donated</div>
+      <div class="bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <script src="@{'/public/javascripts/progressBar.js'}"></script>  
+    
+    
+</section>

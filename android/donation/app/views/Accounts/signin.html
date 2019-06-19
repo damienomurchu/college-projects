@@ -1,0 +1,24 @@
+#{extends 'main.html' /}
+#{set title:'Login' /}
+
+<nav class="ui menu">
+  <a class="ui item" href="/welcome">Home</a>
+  <a class="ui item" href="/signup">Register</a>
+  <a class="ui active item" href="/signin">Login</a>
+</nav>
+
+<section class="ui two column grid segment">
+  <div class="four wide column">
+	  <form class="ui form" action="/authenticate" method="POST">
+	    <div class="field">
+	      <label>Email Address:</label><br>
+	      <input placeholder="Email" type="text" name="user.email">
+	    </div>
+	    <div class="field">
+	      <label>Password:</label><br>
+	      <input placeholder="Password" type="password" name="user.password">
+	    </div>
+	    <br><button class="ui blue submit button">Login</button>
+	  </form>
+  </div>
+</section>

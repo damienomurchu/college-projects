@@ -1,0 +1,33 @@
+#{extends 'main.html' /}
+#{set title:'All Donations Received' /}
+
+<nav class="ui menu">
+  <a class="ui item" href="/landing">Home</a>
+  <a class="ui item" href="/donate">Donate</a>
+  <a class="ui active item" href="/report">Report</a>  
+  <a class="ui item" href="/logout">Logout</a>  
+</nav>
+
+<section class="ui grid segment">
+  <div class="eight wide ui column">
+    <h3>List of Donations</h3>
+    <table class="ui celled table">
+	    <thead>
+	      <tr>
+	        <th>Donor</th>
+	        <th class="center aligned">Amount</th>
+	        <th class="center aligned">Method Donated</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      #{list items:donations, as:'donation'}
+	      <tr>
+	        <td>${donation.donor.firstName} ${donation.donor.lastName} </td>
+	        <td class="center aligned">${donation.amount}</td>
+	        <td class="center aligned">${donation.method}</td>
+	      </tr>
+	      #{/list}
+	    </tbody>
+	  </table>
+  </div>
+</section>

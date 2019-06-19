@@ -1,0 +1,27 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<nav class="ui menu">
+  <a class="ui active item" href="/welcome">Home</a>
+  <a class="ui item" href="/signup">Register</a>
+  <a class="ui item" href="/signin">Login</a>  
+</nav>
+
+<section class="ui two column grid segment">
+  <div class="column">
+    <h1>Homer for President!</h1>
+    <p>Yes, your ears do not deceive you folks - Homer for President!</p>
+    <p>The only choice that makes sense in a crazy and chaotic world!</p>
+    <p>Why be stuck with some other chumps freeloader - choose your own!</p>
+    <p><a href="/register">Register</a> today, or <a href="signin">sign in</a> to buy your own piece of democracy!</p>
+    <p>Being an incompetent boob is not cheap - give generously!</p>
+    <form action="/signup" method="GET">
+      <br><button class="ui blue submit button">Register to Donate!</button>
+    </form>
+  </div>  
+  <div class="column">
+    <div class="ui large image">
+      <img src="/public/images/homer_home.jpg">     
+    </div>
+  </div>
+</section>

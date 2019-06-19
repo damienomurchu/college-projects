@@ -1,0 +1,9 @@
+# ignore compiled binary code files
+/bin/
+
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+!.classpath
+!.project
