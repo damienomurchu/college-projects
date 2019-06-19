@@ -1,0 +1,9 @@
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+!.classpath
+!.project
+# Ignore eclipse files
+eclipse
+bin

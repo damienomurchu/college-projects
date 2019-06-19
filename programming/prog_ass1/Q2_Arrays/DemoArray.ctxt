@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DemoArray()
+comment0.text=\r\n\ Constructs\ DemoArray\ with\ intArray\ capacity\ equal\ to\ size\ variable\r\n
+comment1.params=
+comment1.target=void\ demoArray()
+comment1.text=\r\n\ Populates\ and\ prints\ all\ elements\ of\ objects\ intArray\ using\ for\ loops.\r\n
+comment2.params=
+comment2.target=void\ demoArray2()
+comment2.text=\r\n\ Populates\ and\ prints\ all\ elements\ of\ objects\ intArray\ using\ while\ loops.\r\n
+comment3.params=
+comment3.target=void\ demoArray3()
+comment3.text=\r\n\ Populates\ and\ prints\ all\ elements\ of\ objects\ intArray\ with\ do-while\ loops.\r\n
+comment4.params=
+comment4.target=void\ demoArray4()
+comment4.text=\r\n\ Creates\ and\ populates\ a\ new\ ArrayList,\ printing\ all\ elements\ with\ an\ interator\r\n
+comment5.params=low\ hi
+comment5.target=void\ sumEven(int,\ int)
+comment5.text=\r\n\ Sums\ all\ even\ numbers\ from\ low\ to\ hi\ (inclusive)\ and\ prints\ result\r\n\ @param\ low\ The\ minimum\ range\ value\ inclusive\r\n\ @param\ hi\ The\ maximum\ range\ value\ inclusive\r\n
+numComments=6

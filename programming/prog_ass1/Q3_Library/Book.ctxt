@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=title\ author\ numberPages\ isbn
+comment0.target=Book(java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
+comment0.text=\r\n\ Book\ constructor\ that\ takes\ title,\ author,\ number\ of\ pages,\ and\ isbn\r\n
+comment1.params=
+comment1.target=void\ borrow()
+comment1.text=\r\n\ Borrow\ a\ book\r\n
+comment2.params=
+comment2.target=boolean\ isBorrowed()
+comment2.text=\r\n\ Checks\ whether\ a\ book\ is\ borrowed\r\n
+comment3.params=
+comment3.target=void\ returns()
+comment3.text=\r\n\ Returns\ a\ book\r\n
+comment4.params=
+comment4.target=java.lang.String\ loanStatus()
+comment4.text=\r\n\ Prints\ loan\ status\ of\ book\r\n
+comment5.params=
+comment5.target=void\ printDetails()
+comment5.text=\r\n\ Prints\ details\ of\ book\r\n
+comment6.params=
+comment6.target=java.lang.String\ getTitle()
+comment6.text=\r\n\ Prints\ title\ of\ book\r\n
+numComments=7

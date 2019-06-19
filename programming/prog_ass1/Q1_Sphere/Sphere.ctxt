@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Sphere()
+comment0.text=\r\n\ Construct\ sphere\ with\ default\ radius\ of\ 10.0\r\n
+comment1.params=radius
+comment1.target=Sphere(double)
+comment1.text=\r\n\ Construct\ sphere\ from\ radius\ value\ passed\r\n\ @param\ radius\ radius\ of\ new\ sphere\r\n
+comment2.params=value
+comment2.target=boolean\ isValid(double)
+comment3.params=radius
+comment3.target=void\ setState(double)
+comment4.params=
+comment4.target=double\ surfaceArea()
+comment4.text=\r\n\ Calculates\ surface\ area\ of\ sphere\ object\ \r\n\ @return\ the\ surface\ area\ of\ sphere\r\n
+comment5.params=
+comment5.target=double\ volume()
+comment5.text=\r\n\ Calculates\ volume\ of\ a\ sphere\ object\r\n\ @return\ the\ volume\ of\ sphere\r\n
+comment6.params=
+comment6.target=double\ greatCircle()
+comment6.text=\r\n\ Calculates\ circumference\ of\ a\ sphere\ object\r\n\ @return\ the\ circumference\ of\ sphere\r\n
+comment7.params=radius
+comment7.target=void\ changeSize(double)
+comment7.text=\r\n\ Changes\ radius\ value\ of\ a\ sphere\ object\ \r\n\ @param\ radius\ new\ radius\ of\ sphere\r\n
+comment8.params=
+comment8.target=int\ getNumberSpheres()
+comment8.text=\r\n\ Prints\ number\ of\ sphere\ objects\ that\ have\ been\ created\ \r\n\ @return\ the\ number\ of\ spheres\ created\r\n
+numComments=9

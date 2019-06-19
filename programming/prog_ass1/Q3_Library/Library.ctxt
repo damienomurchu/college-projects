@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Library()
+comment0.text=\r\n\ Constructs\ a\ new\ library\ object,\ initialising\ ArrayList\ to\ hold\ books\ \ \ \ \r\n
+comment1.params=book
+comment1.target=void\ add(Book)
+comment1.text=\r\n\ Adds\ book\ to\ library\r\n
+comment2.params=
+comment2.target=int\ numberBooks()
+comment2.text=\r\n\ Returns\ number\ of\ books\ held\ in\ library\r\n\ @return\ the\ number\ of\ books\ in\ the\ library\r\n
+comment3.params=book
+comment3.target=java.lang.String\ loanStatus(Book)
+comment3.text=\r\n\ Retrieves\ loan\ status\ of\ a\ book\r\n\ @param\ book\ book\ to\ check\r\n\ @return\ the\ loan\ status\ of\ the\ book,\ or\ a\ message\ the\ book\ is\ not\ in\ the\ library\r\n
+comment4.params=book
+comment4.target=java.lang.String\ hasBook(Book)
+comment4.text=\r\n\ Checks\ whether\ library\ contains\ book\r\n\ @param\ book\ book\ to\ check\ library\ for\r\n\ @return\ the\ availability\ of\ the\ book,\ or\ a\ message\ the\ book\ is\ not\ in\ the\ library\r\n
+comment5.params=book
+comment5.target=boolean\ removeBook(Book)
+comment5.text=\r\n\ Removes\ a\ book\ from\ the\ library\r\n\ @param\ book\ book\ to\ remove\ from\ library\r\n\ @return\ a\ boolean\ indicating\ the\ success\ of\ the\ removal\r\n
+comment6.params=
+comment6.target=void\ removeAllBooks()
+comment6.text=\r\n\ Removes\ all\ books\ from\ the\ library\r\n
+comment7.params=
+comment7.target=void\ printDetailsAll()
+comment7.text=\r\n\ Print\ all\ book\ details\ of\ books\ held\ in\ library\r\n
+numComments=8

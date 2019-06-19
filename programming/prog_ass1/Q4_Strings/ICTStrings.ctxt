@@ -1,0 +1,35 @@
+#BlueJ class context
+comment0.params=s1\ s2
+comment0.target=boolean\ isEqual(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Check\ is\ s1\ is\ equal\ to\ s2\r\n\ @param\ s1\ a\ string\r\n\ @param\ s2\ another\ string\r\n\ @return\ true\ if\ strings\ equal\ else\ false\r\n
+comment1.params=s1\ s2
+comment1.target=boolean\ isEqualIgnoreCase(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Check\ is\ s1\ is\ equal\ to\ s2\ ignoring\ case\r\n\ @param\ s1\ a\ string\r\n\ @param\ s2\ another\ string\r\n\ @return\ true\ if\ strings\ equal,\ ignoring\ case,\ else\ false\r\n
+comment10.params=s
+comment10.target=boolean\ isPalindrome(java.lang.String)
+comment10.text=\ \r\n\ Check\ if\ string\ is\ a\ palindrome\r\n\ @param\ s\ Is\ s\ a\ palindrome?\r\n\ @return\ Returns\ true\ if\ argument\ a\ palindrome,\ else\ false.\r\n
+comment2.params=s1\ prefix
+comment2.target=boolean\ hasPrefix(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Check\ if\ s1\ has\ prefix\r\n\ @param\ s1\ a\ string\r\n\ @param\ prefix\ another\ string\ \r\n\ @return\ true\ if\ s1\ starts\ with\ prefix\r\n
+comment3.params=s1\ s2
+comment3.target=int\ length(java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ Length\ string\ comprising\ concatenated\ strings\ s1\ and\ s2\r\n\ @param\ s1\ a\ string\r\n\ @param\ s2\ another\ string\r\n\ @return\ length\ of\ s1\ concatenated\ with\ s2\r\n
+comment4.params=s1
+comment4.target=java.lang.String\ toUpper(java.lang.String)
+comment4.text=\r\n\ Create\ string\ the\ uppercase\ version\ of\ s1\r\n\ @param\ s1\ a\ string\r\n\ @return\ copy\ of\ s1\ all\ in\ upper\ case\r\n
+comment5.params=s1\ suffix
+comment5.target=boolean\ endsWith(java.lang.String,\ java.lang.String)
+comment5.text=\r\n\ Returns\ true\ if\ string\ ends\ with\ suffix.\r\n\ Example\ if\ s1\ is\ "this\ is\ a\ string"\ and\ suffix\ is\ "ring"\ the\ return\ value\ will\ be\ true.\r\n\ @param\ s1\ a\ string\r\n\ @param\ suffix\ a\ string\r\n\ @return\ true\ if\ s1\ ends\ in\ suffix\r\n
+comment6.params=s1\ indexStart\ indexEnd
+comment6.target=java.lang.String\ subString(java.lang.String,\ int,\ int)
+comment6.text=\r\n\ Create\ substring\ of\ s1\ from\ indexStart\ to\ indexEnd\ excluding\ indexEnd\r\n\ That\ is\:\ range\ is\ [indexStart,\ indexEnd)\r\n\ Example\ String\ "Hello\ ICTSkills"\r\n\ indexStart\ \=\ 2;\r\n\ indexEnd\ \=\ 8;\r\n\ substring\ is\ "llo\ IC"\r\n\ @param\ s1\ a\ string\r\n\ @param\ indexStart\ of\ s1\ becomes\ zeroth\ index\ of\ substring\r\n\ @param\ indexEnd\ of\ s1\ determines\ end\ of\ substring\r\n\ @return\ the\ substring\r\n
+comment7.params=string
+comment7.target=java.lang.String\ reverse_1(java.lang.String)
+comment7.text=\r\n\ Create\ a\ string,\ the\ reverse\ of\ string\ using\ StringBuilder\r\n\ @param\ string\ the\ string\ to\ be\ reversed\r\n\ @return\ a\ copy\ of\ string\ reversed\r\n
+comment8.params=string
+comment8.target=java.lang.String\ reverse_2(java.lang.String)
+comment8.text=\r\n\ Create\ a\ string,\ the\ reverse\ of\ string\r\n\ An\ array\ of\ char\ type\ of\ same\ size\ of\ string\ is\ instantiated.\r\n\ In\ a\ for\ loop\ the\ string\ characters\ are\ assigned\ to\ the\ array\ in\ reverse\ order.\r\n\ The\ array\ is\ used\ to\ create\ a\ string\ which\ is\ then\ returned.\r\n\ This\ string\ will\ be\ the\ reverse\ of\ the\ actual\ parameter\ string.\r\n\ \r\n\ @param\ string\ the\ string\ to\ be\ reversed\r\n\ @return\ a\ copy\ of\ string\ reversed\r\n
+comment9.params=string
+comment9.target=java.lang.String\ reverse_3(java.lang.String)
+comment9.text=\r\n\ Reverses\ a\ string\ using\ the\ StringBuffer\ class\ \r\n\ @param\ string\ the\ string\ to\ be\ reversed\r\n\ @return\ a\ copy\ of\ string\ reversed\r\n
+numComments=11
