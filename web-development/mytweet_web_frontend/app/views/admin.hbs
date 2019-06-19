@@ -1,0 +1,59 @@
+  <!-- navbar -->
+  {{> navbar_admin }}
+
+  <!-- stats -->
+  <div class="ui row">
+    <section class="ui center aligned padded grid">
+      <div class="ui fourteen wide column">
+        {{> admin_stats }}
+      </div>
+    </section>
+  </div>
+
+  <!-- delete user & delete tweets -->
+  <div class="ui row">
+    <div class="ui two column center aligned padded grid">
+      <div row="ui row">
+        <h3 class="ui horizontal divider header"><i class="trash icon"></i>Delete Users & Tweets</h3>
+      </div>
+      <div class="ui row">
+        <div class="ui seven wide column">
+          {{> admin_deleteuser }}
+        </div>
+        <div class="ui seven wide column">
+          {{> admin_deletetweet }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- register new user -->
+  <div class="ui row">
+    <section class="ui center aligned padded grid">
+    <div class="ui fourteen wide column">
+      <h3 class="ui horizontal divider header"><i class="talk outline icon"></i>Register New User</h3>
+       <form class="ui form" action="/admin/registeruser" method="POST">
+          {{> fields_names }}
+          <button class="ui blue submit button">Register User</button>
+        </form>
+        {{> formerror_signup }}
+      </div>
+    </section>
+  </div>
+
+
+  <!-- tweet timeline -->
+  <section class="ui center aligned padded grid">
+
+    <!-- tweet content and send button -->
+    <div class="ui fourteen wide column">
+      <h3 class="ui horizontal divider header"><i class="talk outline icon"></i>Tweet Timeline</h3>
+      <form class="ui form"  action="/admin/deletetweets" method="POST">
+        {{> fields_tweetlist}}
+        <button class="ui button" type="submit">Delete Selected</button>
+      </form>
+    </div>
+
+  </section>
+
+

@@ -1,0 +1,26 @@
+{
+  "name": "mytweet_web",
+  "version": "1.0.0",
+  "description": "MyTweet microblogging app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/murchu/mytweet_web.git"
+  },
+  "author": "Damien Murphy",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/murchu/mytweet_web#readme",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^15.1.1",
+    "hapi-auth-cookie": "^6.1.1",
+    "inert": "^4.0.2",
+    "joi": "^9.2.0",
+    "mongoose": "^4.6.5",
+    "mongoose-seeder": "^1.2.1",
+    "vision": "^4.1.0"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="two fields">
+  <div class="field">
+    <input value="{{user.firstName}}" type="text" name="firstName">
+  </div>
+  <div class="field">
+    <input value="{{user.lastName}}" type="text" name="lastName">
+  </div>
+</div>
+<div class="field">
+  <input value="{{user.email}}" type="text" name="email">
+</div>
+<div class="field">
+  <input type="password" name="password">
+</div>
+
+<!--<div class="field">
+  <input type="file" name="avatar" accept="image/*" />
+</div>-->
+
+<label for="file" class="ui icon button">
+  <i class="cloud icon"></i>
+  Upload avatar image
+  <input type="file" id="file" name="avatar" style="display: none" accept="image/*" size="40" required/>
+</label>

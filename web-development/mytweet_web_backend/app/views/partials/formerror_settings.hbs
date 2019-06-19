@@ -1,0 +1,13 @@
+{{#if settingserrors}}
+  <div class="ui negative message transition">
+    <i class="close icon"></i>
+    <div class="header">
+      There were some errors with your proposed changes
+    </div>
+    <ul class="list">
+      {{#each settingserrors}}
+        <li>{{message}}</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}

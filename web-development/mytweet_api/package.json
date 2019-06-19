@@ -1,0 +1,30 @@
+{
+  "name": "mytweet_api",
+  "version": "1.0.0",
+  "description": "api for mytweet android & web apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/damienomurchu/mytweet_api.git"
+  },
+  "keywords": [
+    "mytweet",
+    "api",
+    "twitter",
+    "microblog",
+    "tweets"
+  ],
+  "author": "Damien Murphy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damienomurchu/mytweet_api/issues"
+  },
+  "homepage": "https://github.com/damienomurchu/mytweet_api#readme",
+  "dependencies": {
+    "hapi": "^15.2.0",
+    "mongoose": "^4.6.6"
+  }
+}

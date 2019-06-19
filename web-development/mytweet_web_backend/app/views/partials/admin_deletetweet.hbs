@@ -1,0 +1,11 @@
+<div class="ui row segment">
+  <h3>Delete Tweets from User(s)</h3>
+  <form class="ui form" action="/admin/deletealltweets" method="POST">
+    <select name="users" multiple="" class="ui fluid dropdown">
+      {{#each users}}
+        <option value="{{_id}}">{{firstName}} {{lastName}}</option>
+      {{/each}}
+    </select><br>
+    <button class="ui blue submit button">Delete</button>
+  </form>
+</div>

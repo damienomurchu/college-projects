@@ -1,0 +1,93 @@
+/* Main css sheet for core styling options */
+
+
+/* default body options for pages */
+body{
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: .9em;
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	
+	/* light corner vignette to draw eye towards centre of page. Code to cover all browser options */
+	background: rgba(255,255,255,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(237,237,237,0.44) 66%, rgba(246,246,246,0.15) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(66%, rgba(237,237,237,0.44)), color-stop(100%, rgba(246,246,246,0.15)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(237,237,237,0.44) 66%, rgba(246,246,246,0.15) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(237,237,237,0.44) 66%, rgba(246,246,246,0.15) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(237,237,237,0.44) 66%, rgba(246,246,246,0.15) 100%);
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(237,237,237,0.44) 66%, rgba(246,246,246,0.15) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=1 );
+}
+
+/* remove underline from links */
+a{
+	text-decoration: none;
+}
+
+/* clicked & unclicked links to dark slate blue */
+a:link, a:visited{
+	color: #483D8B;
+}
+
+/* positioning of main content in pages */
+.maincontent{
+	width: 70%;
+	float: left;
+}
+
+/* tighten contact page */
+.maincontent-contact-section{
+	width: 60%;
+	margin-top: 2.5%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/* aside content column on pages */
+.secondarycontent{
+	width: 25%;
+	float: right;
+}
+
+/* positioning of page footer */
+.footer{
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+/* line up social media footer icons */
+ul.social-footer-icons li{
+	display: inline;
+}
+
+/* pull together social media footer icons */
+ul.social-footer-icons img{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	border-top: 2px solid gray;
+	height: 30px;
+}
+
+/* illustration image on main page */
+.main-page-image{
+	margin-top: 2.5%;
+	width: 100%;
+}
+
+/* illustration images on individual exercise pages */
+.exercise-section-image{
+	height: 200px;
+}
+
+/* bottom of resource page */
+#bruce-lee-quote{
+	padding: 2%;
+	border: 1px solid black;
+	margin: 2%;
+	text-align: center;
+}

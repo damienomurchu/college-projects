@@ -1,0 +1,215 @@
+# The Simpson clan
+
+User(homer):
+    firstName: Homer
+    lastName: Simpson
+    age: 47
+    nationality: Simpsonian
+    email: homer@simpson.com
+    password: secret
+    statusText: I like beer..
+
+User(marge):
+    firstName: Marge
+    lastName: Simpson
+    age: 44
+    nationality: Simpsonian
+    email: marge@simpson.com
+    password: secret
+    statusText: I don't like beer..
+
+User(lisa):
+    firstName: Lisa
+    lastName: Simpson
+    age: 13
+    nationality: Simpsonian
+    email: lisa@simpson.com
+    password: secret
+    statusText: I play the sax!
+
+User(bart):
+    firstName: Bart
+    lastName: Simpson
+    age: 11
+    nationality: Simpsonian
+    email: bart@simpson.com
+    password: secret
+    statusText: I enjoy mischief!
+
+User(maggie):
+    firstName: Maggie
+    lastName: Simpson
+    age: 3
+    nationality: Simpsonian
+    email: maggie@simpson.com
+    password: secret
+    statusText: I am just a baby
+    
+    
+    
+# Selection of messages between the Simpson family
+
+Message(homerToMarge):
+    from: homer
+    to: marge
+    subject: Drunk!?
+    messageText: "Hey Marge, I won't be home.. hic.."
+    postedAt: 2016-05-16t08:30:00.00
+    
+Message(homerToLisa):
+    from: homer
+    to: lisa
+    subject: Re Noise    
+    messageText: 'Knock off that saxophone!'
+    postedAt: 2016-05-16t08:40:00.00
+
+Message(homerToBart):
+    from: homer
+    to: bart
+    subject: Choke...  
+    messageText: 'Why I outta...'
+    postedAt: 2016-05-16t08:50:00.00
+
+Message(homerToMaggie):
+    from: homer
+    to: maggie
+    subject: Baby!!
+    messageText: 'Oooh.. look at you..'
+    postedAt: 2016-05-16t09:00:00.00
+
+Message(margeToHomer):
+    from: marge
+    to: homer    
+    subject: Where??
+    messageText: 'Hey Homie..'
+    postedAt: 2016-05-16t09:10:00.00
+    
+Message(lisaToHomer):
+    from: lisa
+    to: homer
+    subject: Dad?    
+    messageText: 'Hey dad..'
+    postedAt: 2016-05-16t09:20:00.00    
+    
+Message(bartToHomer):
+    from: bart
+    to: homer
+    subject: Dad..
+    messageText: 'Homer, my man..'
+    postedAt: 2016-05-16t09:30:00.00
+
+Message(maggieToHomer):
+    from: maggie
+    to: homer
+    subject: Hey Pal!
+    messageText: '........'
+    postedAt: 2016-05-16t09:40:00.00
+    
+
+
+# Sample friendships between the Simpson clan
+
+Friendship(homerAndMarge):
+    sourceUser: homer
+    targetUser: marge
+    
+Friendship(homerAndLisa):
+    sourceUser: homer
+    targetUser: lisa
+
+Friendship(homerAndBart):
+    sourceUser: homer
+    targetUser: bart
+
+Friendship(homerAndMaggie):
+    sourceUser: homer
+    targetUser: maggie
+
+Friendship(margeAndHomer):
+    sourceUser: marge
+    targetUser: homer
+
+Friendship(lisaAndBart):
+    sourceUser: lisa
+    targetUser: bart
+
+Friendship(lisaAndMaggie):
+    sourceUser: lisa
+    targetUser: maggie
+
+Friendship(bartAndMaggie):
+    sourceUser: bart
+    targetUser: maggie
+    
+Friendship(bartAndLisa):
+    sourceUser: bart
+    targetUser: lisa
+
+Friendship(maggieAndLisa):
+    sourceUser: maggie
+    targetUser: lisa
+
+Friendship(maggieAndBart):
+    sourceUser: maggie
+    targetUser: bart
+ 
+
+# Simpson clan with friendships added
+ 
+User(homer):
+    firstName: Homer
+    lastName: Simpson
+    age: 47
+    nationality: Simpsonian
+    email: homer@simpson.com
+    password: secret
+    statusText: I like beer..
+    friendships:
+                - homerAndMarge
+
+User(marge):
+    firstName: Marge
+    lastName: Simpson
+    age: 44
+    nationality: Simpsonian
+    email: marge@simpson.com
+    password: secret
+    statusText: I don't like beer..
+    friendships:
+                - margeAndHomer
+
+User(lisa):
+    firstName: Lisa
+    lastName: Simpson
+    age: 13
+    nationality: Simpsonian
+    email: lisa@simpson.com
+    password: secret
+    statusText: I play the sax!
+    friendships:
+                - lisaAndBart
+                - lisaAndMaggie
+
+User(bart):
+    firstName: Bart
+    lastName: Simpson
+    age: 11
+    nationality: Simpsonian
+    email: bart@simpson.com
+    password: secret
+    statusText: I enjoy mischief!
+    friendships:
+                - bartAndLisa
+                - bartAndMaggie
+
+User(maggie):
+    firstName: Maggie
+    lastName: Simpson
+    age: 3
+    nationality: Simpsonian
+    email: maggie@simpson.com
+    password: secret
+    statusText: I am just a baby
+    friendships:
+                - maggieAndLisa
+                - maggieAndBart

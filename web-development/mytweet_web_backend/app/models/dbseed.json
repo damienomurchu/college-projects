@@ -1,0 +1,88 @@
+{
+  "users": {
+    "_model": "User",
+    "homer": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret"
+    },
+    "marge": {
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "secret"
+    },
+    "lisa": {
+      "firstName": "Lisa",
+      "lastName": "Simpson",
+      "email": "lisa@simpson.com",
+      "password": "secret"
+    },
+    "bart": {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret"
+    },
+    "maggie": {
+      "firstName": "Maggie",
+      "lastName": "Simpson",
+      "email": "maggie@simpson.com",
+      "password": "secret"
+    }
+  },
+  "tweets": {
+    "_model": "Tweet",
+    "tweet1": {
+      "date": "Fri Nov 04 2016 19:03:39 GMT+0000 (GMT)",
+      "content": "Donuts....",
+      "user": "->users.homer"
+    },
+    "tweet2": {
+      "date": "Fri Nov 04 2016 19:43:39 GMT+0000 (GMT)",
+      "content": "Bart, I'm going to kill you....",
+      "user": "->users.homer"
+    },
+    "tweet3": {
+      "date": "Fri Nov 04 2016 19:23:39 GMT+0000 (GMT)",
+      "content": "Dinners ready!",
+      "user": "->users.marge"
+    },
+    "tweet4": {
+      "date": "Fri Nov 04 2016 19:57:39 GMT+0000 (GMT)",
+      "content": "Homer stop strangling Bart!",
+      "user": "->users.marge"
+    },
+    "tweet5": {
+      "date": "Fri Nov 04 2016 19:23:39 GMT+0000 (GMT)",
+      "content": "The saxophone isn't too loud!?",
+      "user": "->users.lisa"
+    },
+    "tweet6": {
+      "date": "Fri Nov 04 2016 19:43:39 GMT+0000 (GMT)",
+      "content": "I need to practice!!",
+      "user": "->users.lisa"
+    },
+    "tweet7": {
+      "date": "Fri Nov 04 2016 19:59:39 GMT+0000 (GMT)",
+      "content": "Hey Homie my man..",
+      "user": "->users.bart"
+    },
+    "tweet8": {
+      "date": "Fri Nov 04 2016 19:53:39 GMT+0000 (GMT)",
+      "content": "I'm so cool!",
+      "user": "->users.bart"
+    },
+    "tweet9": {
+      "date": "Fri Nov 04 2016 19:43:39 GMT+0000 (GMT)",
+      "content": "........",
+      "user": "->users.maggie"
+    },
+    "tweet10": {
+      "date": "Fri Nov 04 2016 19:03:39 GMT+0000 (GMT)",
+      "content": "Mama...",
+      "user": "->users.maggie"
+    }
+  }
+}

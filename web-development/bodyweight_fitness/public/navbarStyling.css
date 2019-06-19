@@ -1,0 +1,66 @@
+/* Secondary css sheet to style nav bars on site */
+
+/* small offset to ensure secondary nav lines up beneath primary nav */
+.first-navbar-item{
+	margin-left: 9px;
+}
+
+/* set defaults for both nav bar ul's */
+ul.primaryNav, ul.secondaryNav{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* primary nav bar setup */
+ul.primaryNav li{
+		font-size: 145%;
+		display: inline;
+		line-height: 2em;
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+}
+
+/* remove bullets from secondary nav bar */
+ul.secondaryNav li{
+	list-style: none;
+}
+
+/* remove underlining from navbar page links */
+ul.primaryNav a, ul.secondaryNav a{
+	text-decoration: none;
+}
+
+/* highlight current page on primary navbar */
+ul.primaryNav li.currentNav{
+	padding-bottom: .5em;
+	border-bottom: 2px solid black;
+	font-weight: bolder;
+}
+
+/* give a little space above and below the primary nav bar */
+ul.primaryNav{
+	margin-top: 1.25%;
+	margin-bottom: 1.5%;
+}
+
+/* highlight current page on secondary navbar */
+ul.secondaryNav li.currentNav{
+	padding-bottom: .5em;
+	border-bottom: 1.5px solid black;
+	font-weight: bolder;
+}
+
+/* setup for secondary nav bar */
+ul.secondaryNav li{
+	font-size: 115%;
+	display: inline;
+	line-height: 2em;
+	padding-right: 1.5%;
+	padding-left: 1.5%;
+}
+
+/* push secondary nav down a little from primary nav bar */
+ul.secondaryNav{
+	margin-top: 1.5%;
+}

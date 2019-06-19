@@ -1,0 +1,13 @@
+{{#if signuperrors}}
+  <div class="ui negative message transition">
+    <i class="close icon"></i>
+    <div class="header">
+      There were some errors with your signup details
+    </div>
+    <ul class="list">
+      {{#each signuperrors}}
+        <li>{{message}}</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/if}}

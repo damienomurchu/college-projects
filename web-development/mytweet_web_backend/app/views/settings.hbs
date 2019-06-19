@@ -1,0 +1,18 @@
+<section class="ui center aligned padded grid">
+
+  <div class="ui fourteen wide column">
+
+    {{> settingsmenu }}
+
+    <div class="ui row segment">
+      <form class="ui form" action="/updatesettings" method="POST" enctype="multipart/form-data">
+        <h3 class="ui header">Registered Settings:</h3>
+        {{> fields_settings }}
+        <button class="ui blue submit button">Update Settings</button>
+      </form>
+      {{> formerror_settings }}
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,52 @@
+<div class="ui clearing segment">
+  <h2 class="ui left floated header"><i class="talk outline icon"></i>MyTweet</h2>
+</div>
+
+<section class="ui stacked grid segment">
+
+    <!-- signup/ login area -->
+    <article class="ui column" style="background-image:url('images/welcomebackground.jpg');">
+
+      <div class="ui two column grid">
+
+        <!-- Welcome image/ intro -->
+        <div class="ui eight wide column">
+          <h2>Welcome to MyTweet!</h2>
+          <h3>The world in 140 characters!</h3>
+        </div>
+
+        <!-- Login/ signup area -->
+        <div class="ui eight wide column">
+
+          <!-- divider -->
+          <h4 class="ui horizontal divider header"><i class="sign in icon"></i></h4>
+
+          <!-- login area -->
+          <div class="ui row segment">
+            <form class="ui form" action="/login" method="POST">
+              <h3 class="ui header">Log-in</h3>
+                {{> fields_login }}
+              <button class="ui blue submit button">Login</button>
+            </form>
+            {{> formerror_login }}
+          </div>
+
+          <!-- divider -->
+          <h4 class="ui horizontal divider header"><i class="add user icon"></i></h4>
+
+          <!-- signup area -->
+          <div class="ui row segment">
+            <form class="ui form" action="/signup" method="POST">
+              <h3 class="ui header">Register</h3>
+                {{> fields_signup }}
+              <button class="ui blue submit button">Submit</button>
+            </form>
+            {{> formerror_signup }}
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+</section>

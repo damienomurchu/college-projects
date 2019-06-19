@@ -1,0 +1,29 @@
+<table class="ui fixed single line celled table">
+  <thead>
+  <tr>
+    <th class="two wide center aligned">Sent By:</th>
+    <th class="ten wide">Tweeted:</th>
+    <th class="three wide center aligned">Time:</th>
+    <th class="one wide center aligned"><i class="trash icon"></i></th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each tweets}}
+    <tr>
+      <td class="center aligned"><a href="/timeline/{{ user._id }}"> {{ user.firstName }} </a></td>
+      <td>
+        {{#if picture.data}}
+          <img class="ui medium image" src="/getpicture/{{{_id}}}"><br>
+        {{/if}}
+        {{content}}
+      </td>
+      <td class="center aligned"> {{shortDate date}} </td>
+      <td class="center aligned">
+        <div class="ui checkbox">
+          <input type="checkbox" name="{{id}}"> <label></label>
+        </div>
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,33 @@
+#{extends 'main.html' /}
+#{set title:'Members' /}
+
+<nav class="ui menu">
+	<a class="ui item" href="/home">Home</a> 
+	<a class="ui active item"	href="/members">Members</a> 
+	<a class="ui item" href="/profile">Profile</a>
+	<a class="ui item" href="/leaderboard">Leaderboard</a> 
+	<a class="ui item" href="/login">Logout</a>
+</nav>
+
+<section class="ui segment">
+  <h2 class="ui header"><i class="users icon"></i> SpaceBook's Members</h2>
+  <table class="ui very basic collapsing celled table">
+	  <thead></thead>
+	  #{list items:users, as:'user'}
+	    <tbody>
+	      <tr>
+	        <td>
+	          <h3 class="ui image header">
+	            <img class="ui mini rounded image" src="/profile/getpicture/${user.id}">
+	            <div class="content">
+	            <a href="/publicprofile/${user.id}">${user.firstName} ${user.lastName}</a>
+	            (<a href="/members/follow/${user.id}">  <i class="add user icon"></i></a>)
+	            <div class="sub header">${user.statusText}</div>
+	            </div>
+	          </h3>
+	        </td>
+	      </tr>
+	    </tbody>
+	  #{/list}
+	</table>
+</section>  

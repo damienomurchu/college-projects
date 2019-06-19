@@ -1,0 +1,51 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Landing page
+GET     /                                       Accounts.index
+
+# Accounts
+GET     /signup                                 Accounts.signup
+GET     /login                                  Accounts.login
+GET     /logout                                 Accounts.logout
+POST    /authenticate                           Accounts.authenticate
+POST    /register                               Accounts.register
+POST    /account/edit                           Accounts.edit
+
+# Home page
+GET     /home                                   Home.index
+GET     /home/drop/{id}                         Home.drop
+GET     /home/byuser                            Home.byUser
+GET     /home/bydate                            Home.byDate
+GET     /home/byconversation                    Home.byConv
+
+# Members page
+GET     /members                                Members.index
+GET     /members/follow/{id}                    Members.follow
+
+# Profile page
+GET     /profile                                Profile.index
+POST    /profile/changestatus                   Profile.changeStatus
+POST    /profile/editprofile                    Profile.editProfile
+POST    /profile/uploadpicture/{id}             Profile.uploadPicture
+GET     /profile/getpicture/{id}                Profile.getPicture
+
+# Public Profiles
+GET 		/publicprofile/{id} 										PublicProfile.visit
+POST    /publicprofile/sendmessage/{id}         PublicProfile.sendMessage
+
+# Leaderboard page
+GET			/leaderboard														Leaderboard.index
+GET     /leaderboard/popular                    Leaderboard.popular
+GET     /leaderboard/talkative                  Leaderboard.talkative
+GET     /leaderboard/social                     Leaderboard.social
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

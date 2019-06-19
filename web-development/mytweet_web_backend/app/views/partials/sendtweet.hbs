@@ -1,0 +1,26 @@
+<section class="ui center aligned padded grid">
+
+  <!-- tweet content and send button -->
+  <div class="ui fourteen wide column">
+    <form action="/sendtweet" method="POST" enctype="multipart/form-data">
+
+    <!-- send tweet text box -->
+    <div class="ui row">
+      <div class="ui left icon right labeled action fluid input">
+        <input id="tweetContent" type="text" name="content" placeholder="What's in your mind...">
+        <div id="charCounter" class="ui basic label">140</div>
+        <i class="talk icon"></i>
+        <button class="ui submit button">Send</button>
+      </div>
+    </div>
+
+    <!-- upload picture area -->
+    <div class="ui row">
+      <input type="file" name="picture">
+    </div>
+
+    </form>
+  </div>
+
+
+</section>

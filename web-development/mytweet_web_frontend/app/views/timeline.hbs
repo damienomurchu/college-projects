@@ -1,0 +1,25 @@
+{{> timelinemenu }}
+
+  <!-- send tweet box -->
+  <div class="ui row">
+    {{> sendtweet }}
+  </div>
+
+  <!-- timeline tweet list -->
+  <div class="ui row">
+    <section class="ui center aligned padded grid">
+
+      <!-- tweet content and send button -->
+      <div class="ui fourteen wide column">
+        <form class="ui form"  action="/deletetweets" method="POST">
+          {{> fields_tweetlist}}
+          <button class="ui button" type="submit">Delete Tweets</button>
+        </form>
+      </div>
+
+    </section>
+  </div>
+
+
+<script type="text/javascript" src="js/updateCharCounter.js"></script>
+
