@@ -14,7 +14,7 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/murchu/mytweet_web#readme",
   "dependencies": {
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^5.0.0",
     "boom": "^4.2.0",
     "disinfect": "^0.2.1",
     "handlebars": "^4.0.5",
