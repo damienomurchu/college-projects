@@ -18,7 +18,7 @@
     "boom": "^4.2.0",
     "disinfect": "^0.2.1",
     "handlebars": "^4.0.5",
-    "hapi": "^15.1.1",
+    "hapi": "^18.1.0",
     "hapi-auth-cookie": "^6.1.1",
     "hapi-auth-jwt2": "^7.2.4",
     "inert": "^4.0.2",
