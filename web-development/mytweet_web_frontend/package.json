@@ -15,7 +15,7 @@
   "homepage": "https://bitbucket.org/murchu/mytweet_web#readme",
   "dependencies": {
     "handlebars": "^4.0.5",
-    "hapi": "^15.1.1",
+    "hapi": "^18.1.0",
     "hapi-auth-cookie": "^6.1.1",
     "inert": "^4.0.2",
     "joi": "^9.2.0",
