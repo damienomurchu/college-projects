@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/damienomurchu/mytweet_api#readme",
   "dependencies": {
-    "hapi": "^15.2.0",
+    "hapi": "^18.1.0",
     "mongoose": "^4.6.6"
   }
 }
